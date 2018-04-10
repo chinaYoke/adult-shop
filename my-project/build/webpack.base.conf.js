@@ -8,15 +8,19 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+
+//export default 原因影响需要注释；  
+// 在构建项目的时候Use ESLint to lint your code? (Y/n)选择了y,规范了js代码
+
 const createLintingRule = () => ({
-  test: /\.(js|vue)$/,
-  loader: 'eslint-loader',
-  enforce: 'pre',
-  include: [resolve('src'), resolve('test')],
-  options: {
-    formatter: require('eslint-friendly-formatter'),
-    emitWarning: !config.dev.showEslintErrorsInOverlay
-  }
+//   test: /\.(js|vue)$/,
+//   loader: 'eslint-loader',
+//   enforce: 'pre',
+//   include: [resolve('src'), resolve('test')],
+//   options: {
+//     formatter: require('eslint-friendly-formatter'),
+//     emitWarning: !config.dev.showEslintErrorsInOverlay
+//   }
 })
 
 module.exports = {
