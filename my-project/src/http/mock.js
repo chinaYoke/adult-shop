@@ -1,5 +1,7 @@
-var Random = Mock.Random
-var index = Mock.mock('http://api.com/index', {
+// import Mock from '@/http/mock.js'
+// import { Random as _Random, mock } from "mockjs";
+const Random = Mock.Random;
+var index = mock('http://api.com/index', {
   // "user|5-10": [{
   //   'name': '@cname', //中文名称
   //   'age|1-100': 100, //100以内随机整数  属性值100只用来确定类型
@@ -61,7 +63,7 @@ var index = Mock.mock('http://api.com/index', {
 
 });
 
-var detail = Mock.mock('http://api.com/detail', {
+var detail = mock('http://api.com/detail', {
   "view|1": [{
     'title|1': ['一加手机5 (A5000) 全网通  移动联通电信4G手机','三星 Galaxy S8 移动联通电信4G手机 ','荣耀9 全网通 标配版 4GB+64GB 移动联通电信4G手机 ','OPPO R11 全网通 手机','小米6 全网通 6GB+128GB 陶瓷尊享版 移动联通电信4G手机 ','新诺基亚（NOKIA）105 移动联通2G手机 老人手机','小辣椒 红辣椒4A 标准版  全网通 移动联通电信4G手机 ','锤子 坚果Pro 全网通 移动联通电信4G手机 ','360手机 N5 全网通 移动联通电信4G手机 ','乐视 S3 爵迹版  移动联通电信4G手机 '
     ],
@@ -84,7 +86,7 @@ var detail = Mock.mock('http://api.com/detail', {
   }]
 });
  
-var category = Mock.mock('http://api.com/category', {
+var category = mock('http://api.com/category', {
     'aside|14':[{
       'title':'@cname',
       'list|60':[{
@@ -96,3 +98,27 @@ var category = Mock.mock('http://api.com/category', {
 });
  
 export {index,detail,category}
+// 引入mockjs
+// const Mock = require('mockjs');
+// // 获取 mock.Random 对象
+// const Random = Mock.Random;
+// // mock一组数据
+// const produceNewsData = function() {
+// 	let articles = [];
+// 	for (let i = 0; i < 100; i++) {
+// 		let newArticleObject = {
+// 			title: Random.csentence(5, 30), //  Random.csentence( min, max )
+// 			thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
+// 			author_name: Random.cname(), // Random.cname() 随机生成一个常见的中文姓名
+// 			date: Random.date() + ' ' + Random.time() // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
+// 		}
+// 		articles.push(newArticleObject)
+// 	}
+
+// 	return {
+// 		articles: articles
+// 	}
+// }
+
+// // Mock.mock( url, post/get , 返回的数据)；
+// Mock.mock('/news/index', 'post', produceNewsData);

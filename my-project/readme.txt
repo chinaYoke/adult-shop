@@ -9,4 +9,4 @@ export与export default均可用于导出常量、函数、文件、模块等，
 export default仅有一个导入的时候没有花括号   
 export、import在一个文件中可以有多个 导入的时候带花括号
 7.axios应用，请求响应拦截器；api.js  用来封装axios
-8.mock.js模拟数据安装
+8.mock.js模拟数据安装;Mock is not defined;失败

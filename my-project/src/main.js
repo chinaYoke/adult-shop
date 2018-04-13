@@ -11,6 +11,9 @@ import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(Mint)
 Vue.use(less)
+
+// import "./mock.js";
+// import Mock from '@/http/mock.js'
 Vue.config.productionTip = false
 Vue.prototype.$api = api;
 /* eslint-disable no-new */

@@ -12,4 +12,7 @@
 /* .mint-searchbar-core{
     text-align: center;
 } */
+.mint-search{
+    height: 7vh;
+}
 </style>

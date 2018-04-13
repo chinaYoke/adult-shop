@@ -7,7 +7,7 @@
 <script>
 import Search from '@/components/index/search.vue'
 import Swiper from '@/components/index/swiper.vue'
-
+// import index from '@/http/mock.js' //模拟数据
 export default {
   components:{
       'v-search':Search,
@@ -18,17 +18,6 @@ export default {
       datas: '',
       loading:true
     }
-  },
-  beforeCreate() {
-
-    this.$api({
-      method: 'post',
-      url: '/index'
-    }).then((response) => {
-      this.datas = response.data;
-    }).catch(function(error) {
-      alert(error)
-    })
   }
 }
 </script>
