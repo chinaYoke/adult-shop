@@ -1,5 +1,4 @@
-// import Mock from '@/http/mock.js'
-// import { Random as _Random, mock } from "mockjs";
+import Mock from 'mockjs';
 const Random = Mock.Random;
 var index = mock('http://api.com/index', {
   // "user|5-10": [{

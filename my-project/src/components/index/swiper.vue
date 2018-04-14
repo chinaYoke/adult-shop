@@ -1,16 +1,14 @@
 <template>
-  <!-- <mt-swipe :auto="4000">
-   <mt-swipe-item v-for="k in swiperData" :key="k.id">
-        <router-link :to="{ name: '详情页'}">
-          <img :src="k.imgPath">
-        </router-link>
-    </mt-swipe-item>
-  </mt-swipe> -->
   <mt-swipe :auto="4000">
+   <mt-swipe-item v-for="k in swiperData" :key="k.id">
+          <img :src="k.imgpath">
+    </mt-swipe-item>
+  </mt-swipe>
+  <!-- <mt-swipe :auto="4000">
     <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
     <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
     <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
-    </mt-swipe>
+    </mt-swipe> -->
 </template>
 <script>
 export default{
