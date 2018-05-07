@@ -13,6 +13,8 @@ Vue.use(Mint)
 Vue.use(less)
 Vue.prototype.$http = axios;
 
+// 引入mockjs
+require('./mock.js')
 
 Vue.config.productionTip = false
 new Vue({

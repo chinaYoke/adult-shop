@@ -1,14 +1,10 @@
 <template>
   <mt-swipe :auto="4000">
    <mt-swipe-item v-for="k in swiperData" :key="k.id">
-          <img :src="k.imgpath">
+          <img :src="k.thumbnail_pic_s">
     </mt-swipe-item>
   </mt-swipe>
-  <!-- <mt-swipe :auto="4000">
-    <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
-    <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
-    <mt-swipe-item><img src="http://img4.imgtn.bdimg.com/it/u=1665207864,746409922&fm=27&gp=0.jpg"/></mt-swipe-item>
-    </mt-swipe> -->
+  
 </template>
 <script>
 export default{

@@ -1,15 +1,16 @@
 <template>
   <div class="index">
       <v-search></v-search>
-      <v-swiper :swiperData="datas.pics"></v-swiper>
-      <v-section1 :section1="datas.infos"></v-section1>
+      <v-swiper :swiperData="ListShow"></v-swiper>
+      <v-section1 :section1="ListShow.title"></v-section1>
   </div>
 </template>
 <script>
 import Search from '@/components/index/search.vue'
 import Swiper from '@/components/index/swiper.vue'
 import Section1 from '@/components/index/section1.vue'
-// import index from '@/http/mock.js' //模拟数据
+import api from '@/axios/api.js'
+
 export default {
   components:{
       'v-search':Search,
@@ -18,20 +19,21 @@ export default {
   },
   data() {
     return {
-      datas: '',
+      ListShow: '',
       loading:true
     }
   },
   beforeCreate() {
-    //请求轮播图片
-   this.$http.get('seller').then((response) => {
-      this.datas = response.data.data;
-      console.log(response)
-    }).catch(function(error) {
-      alert(error)
-    })
+    //请求轮播图
+     api.JH_news('/news/index', 'type=top&key=123456')
+      .then(res => {
+        console.log(res);
+        this.ListShow = res.articles;
+
+      });
   }
 }
+
 </script>
 <style>
 

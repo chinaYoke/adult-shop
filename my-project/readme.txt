@@ -9,5 +9,8 @@ export与export default均可用于导出常量、函数、文件、模块等，
 export default仅有一个导入的时候没有花括号   
 export、import在一个文件中可以有多个 导入的时候带花括号
 7.axios应用，请求响应拦截器；api.js  用来封装axios
-8.mock.js模拟数据安装;Mock is not defined;失败
-9.配置bulid 模拟数据
+8.mock.js模拟数据安装;Mock is not defined;失败===>参考https://www.cnblogs.com/jasonwang2y60/p/7302449.html
+9.配置bulid 模拟数据(接口有的时候不行)
+
+5/7
+1.运用mock.js;公共和主要页面分开。
