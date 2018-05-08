@@ -3,19 +3,22 @@
       <v-search></v-search>
       <v-swiper :swiperData="ListShow"></v-swiper>
       <v-section1 :section1="ListShow.title"></v-section1>
+      <v-footer></v-footer>
   </div>
 </template>
 <script>
 import Search from '@/components/index/search.vue'
 import Swiper from '@/components/index/swiper.vue'
 import Section1 from '@/components/index/section1.vue'
+import Footer from '@/common/footer.vue'
 import api from '@/axios/api.js'
 
 export default {
   components:{
       'v-search':Search,
       'v-swiper':Swiper,
-      'v-section1':Section1
+      'v-section1':Section1,
+      'v-footer':Footer
   },
   data() {
     return {
