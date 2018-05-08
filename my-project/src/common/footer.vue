@@ -1,20 +1,20 @@
-<template>
+<template lang='html'>
   <footer >
       <mt-tabbar v-model="selected">
         <mt-tab-item id="tab1">
-            <img slot="icon" src="">
+         <i slot="icon" class="icon-home"></i>
             首页
         </mt-tab-item>
         <mt-tab-item id="tab2">
-            <img slot="icon" src="">
+             <i slot="icon" class="icon-list"></i>
            分类
         </mt-tab-item>
         <mt-tab-item id="tab3">
-            <img slot="icon" src="">
+             <i slot="icon" class="icon-man-woman"></i>
             去拼团
         </mt-tab-item>
         <mt-tab-item id="tab4">
-            <img slot="icon" src="">
+            <i slot="icon" class="icon-user"></i>
            个人中心
         </mt-tab-item>
         </mt-tabbar>
@@ -27,7 +27,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+  @import '../assets/common.less';
+  @import '../assets/index/style.css';
 
 </style>
 

@@ -14,3 +14,6 @@ export、import在一个文件中可以有多个 导入的时候带花括号
 
 5/7
 1.运用mock.js;公共和主要页面分开。
+2.vue-router; router.js路由；footer.vue公共里面
+3.iconmoon字体
+https://blog.csdn.net/u012550080/article/details/51835096
