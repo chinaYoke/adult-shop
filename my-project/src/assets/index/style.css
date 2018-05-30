@@ -29,7 +29,7 @@
 }
 .icon-home:before {
   content: "\e902";
-  color: #515151;
+  /* color: #515151; */
 }
 .icon-home2:before {
   content: "\e901";

@@ -11,12 +11,18 @@ import axios from 'axios'
 import 'mint-ui/lib/style.css'
 Vue.use(Mint)
 Vue.use(less)
+
+Vue.config.productionTip = false
 Vue.prototype.$http = axios;
 
 // 引入mockjs
 require('./mock.js')
 
-Vue.config.productionTip = false
+
+// 用钩子函数beforeEach()对路由进行判断
+
+
+
 new Vue({
   el: '#app',
   router,

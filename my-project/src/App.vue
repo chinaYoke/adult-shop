@@ -17,7 +17,9 @@ html,body,#app{
   height: 100%;
   -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
-
+body{
+    background:#999;
+}
 body,
 dd,
 dl,
@@ -100,7 +102,7 @@ i {
 body {
     font-family: PingFangSC-Light,helvetica,'Heiti SC';
     color: #666;
-    background: #fff;
+    background: #ffffff;
 }
 
 a {

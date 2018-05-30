@@ -17,3 +17,7 @@ export、import在一个文件中可以有多个 导入的时候带花括号
 2.vue-router; router.js路由；footer.vue公共里面
 3.iconmoon字体
 https://blog.csdn.net/u012550080/article/details/51835096
+4.关于router;router,main,footer.vue
+https://blog.csdn.net/sinat_17775997/article/details/68941091
+
+5/19

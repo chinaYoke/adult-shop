@@ -16,19 +16,23 @@ export default new Router({
         component: Index
       },
       {
-        path: '/collage',
+        path: '/classify',
         name: '分类',
-        component: Collage
+        redirect: '/classify/all',
+        component: Classify,
+        children:[{
+            path:'/classify/:tab'
+        }]
       },
       {
-        path: '/classify',
+        path: '/collage',
         name: '正在拼',
-        component: Classify
+        component: Collage
       },
       {
         path: '/login',
         name: '个人中心',
-        component: Classify
+        component: Login
       }
     ]
 })
